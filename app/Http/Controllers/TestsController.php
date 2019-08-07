@@ -18,7 +18,7 @@ class TestsController extends Controller
 	{
 		$data = ['title' => 'Welcome to HDTuto.com'];
 
-        $pdf = PDF::loadView('pdf.documento1', $data);
+        $pdf = PDF::loadView('pdf.documento4', $data);
 
 
         //return $pdf->download('itsolutionstuff.pdf');
