@@ -1,8 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use VerumConsilium\Browsershot\Facades\PDF;
-
+use PDF;
 
 use Illuminate\Http\Request;
 
@@ -17,10 +16,13 @@ class TestsController extends Controller
     
 	public function test1()
 	{
-		//return view('welcome');
-		
-		//return PDF::loadView('view.name', $data)->inline();
-		return PDF::loadView('welcome', ['prueba1'=>''])->inline();
+		$data = ['title' => 'Welcome to HDTuto.com'];
+
+        $pdf = PDF::loadView('pdf.documento1', $data);
+
+
+        //return $pdf->download('itsolutionstuff.pdf');
+	return $pdf->stream();
 
 	}
 
