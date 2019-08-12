@@ -8,6 +8,7 @@
         <title>J.Garcia</title>
         <!-- plugins:css -->
          <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
         <!-- endinject -->
        </head>
 

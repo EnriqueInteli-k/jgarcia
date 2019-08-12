@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('test1', 'TestsController@test1')->name('test1');
+Route::get('test2', 'TestsController@test2')->name('test2');

@@ -26,6 +26,10 @@ class TestsController extends Controller
 
 	}
 
+        public function test2()
+        {
+            return view('pdf.documento4');
+        }
 
 
 }
